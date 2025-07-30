@@ -12,27 +12,28 @@ Before getting started, make sure you’ve completed the following:
 Set Redirect URI as: https://oauth.pstmn.io/v1/callback
 
 ✅ Familiarize yourself with the Spotify Web API Documentation.
-
-🚀 Setup Steps
-Create Postman Collection
-Name it something like: login_spotify or yourname_spotify.
-
 Set Up OAuth 2.0 in Authorization Tab
+
 Type: Authorization Code
+
 Auth URL: https://accounts.spotify.com/authorize
+
 Access Token URL: https://accounts.spotify.com/api/token
+
 Client ID: {{client_id}}
+
 Client Secret: {{client_secret}}
+
 Scope:
 playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public
 Redirect URI: https://oauth.pstmn.io/v1/callback
 Redirect URI: https://oauth.pstmn.io/v1/callback
 
 Create Environment in Postman with variables:
-    client_id
-    client_secret
-    user_id
-    access_token
+client_id
+client_secret
+user_id 
+access_token
     
 Create a New Playlist
 Endpoint: POST https://api.spotify.com/v1/users/{{user_id}}/playlists
@@ -57,7 +58,7 @@ Body (raw JSON):
         "spotify:track:TRACK_ID_3"
       ]
     }
-✅ Done! Enjoy your playlist—dance or sing these songs 🎶😄
+✅ Done! Enjoy your playlist—dance or sing these songs
 
 💡 Tips
 Your Client ID, Client Secret, and User ID should be saved in Postman environment variables.
